@@ -22,7 +22,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
-    public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block.json",
+    public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
     public static final RegistryObject<Block> ZIRCON_ORE = registerBlock("zircon_ore",
