@@ -1,4 +1,4 @@
-package net.example.net.scoop.tutorialmod;
+package net.scoop.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
@@ -17,8 +17,8 @@ public class TutorialMod
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "tutorialmod";
     private static final Logger LOGGER = LogUtils.getLogger();
-    public TutorialMod()
-    {
+    //very important comment
+    public TutorialMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
