@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.scoop.tutorialmod.TutorialMod;
+import net.scoop.tutorialmod.block.custom.JumpyBlock;
 import net.scoop.tutorialmod.item.ModCreativeModeTab;
 import net.scoop.tutorialmod.item.ModItems;
 
@@ -24,6 +25,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
+            () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.TUTORIAL_TAB);
     public static final RegistryObject<Block> ZIRCON_ORE = registerBlock("zircon_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
