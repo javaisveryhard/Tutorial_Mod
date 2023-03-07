@@ -27,7 +27,7 @@ public class EightBallItem extends Item {
 
         return super.use(level, player, hand);
     }
-    public void outputRandomNum(Player player) {
+    private void outputRandomNum(Player player) {
         player.sendSystemMessage(Component.literal("Your Number is " + getRandomNum()));
     }
     private int getRandomNum(){
